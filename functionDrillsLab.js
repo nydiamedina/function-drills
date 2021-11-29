@@ -25,7 +25,6 @@ function helloWorld() {
 //CODE HERE
 const jsNinja = () => console.log('I am a JavaScript ninja!');
 
-
 ////////////////// PROBLEM 3 ////////////////////
 /*
   Create a function called printName which takes in a person's name and console logs it.
@@ -35,6 +34,8 @@ const jsNinja = () => console.log('I am a JavaScript ninja!');
 
 //CODE HERE
 const printName = (name) => console.log(name);
+
+printName('Nydia');
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
@@ -48,7 +49,9 @@ const printName = (name) => console.log(name);
 */
 
 //CODE HERE
+const greeting = (name) => console.log(`Hello, ${String(name)}`);
 
+greeting('Nydia');
 
 ////////////////// PROBLEM 5 ////////////////////
 
@@ -62,7 +65,12 @@ const printName = (name) => console.log(name);
 */
 
 //CODE HERE
-
+const compareNums = (num1, num2) => {
+  if (num1 === num2) {
+    return num1;
+  }
+  return num1 > num2 ? num1 : num2;
+}
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
