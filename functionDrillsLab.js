@@ -176,7 +176,22 @@ let nameGreeting = nameCheck('Nydia');
 */
 
 //CODE HERE
+const faveColorFinder = color => {
+  if (color === 'red') {
+    return 'Red is a great color';
+  }
+  else if (color === 'green') {
+    return 'Green is a solid favorite color';
+  }
+  else if (color === 'black') {
+    return 'So trendy';
+  }
+  else {
+    return 'You need to evaluate your favorite color choice';
+  }
+}
 
+let colorRating = faveColorFinder('pink');
 
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
