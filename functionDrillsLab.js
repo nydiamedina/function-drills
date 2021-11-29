@@ -81,7 +81,11 @@ const compareNums = (num1, num2) => {
 */
 
 //CODE HERE
+const add = (num1, num2) => {
+  return Number(num1) + Number(num2);
+}
 
+let sum = add(15, 29);
 
 ////////////////// PROBLEM 7 ////////////////////
 
@@ -96,9 +100,7 @@ const exclaim = function(str) {
 
 // arrow
 // declaration
-// expression
-
-
+expression
 
 ////////////////// PROBLEM 8 ////////////////////
 
@@ -111,7 +113,7 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// arrow
+arrow
 // declaration
 // expression
 
