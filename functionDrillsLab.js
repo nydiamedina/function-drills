@@ -305,6 +305,15 @@ upperCase(sampleString);
   If it does, return 'email verified' and if doesn't, 
   return 'must provide a valid email address'
 */
+const emailCheck = email => {
+  const stringEmail = String(email).trim();
+  
+  if (stringEmail.includes('@')) {
+    return 'Email verified';
+  } else {
+    return 'Must provide a valid email address'
+  }
+}
 
 ////////////////// PROBLEM 19 ////////////////////
 /*
