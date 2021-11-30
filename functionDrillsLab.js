@@ -347,7 +347,17 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 */
 
 //CODE HERE
+const isArrayAscending = arr => {
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i - 1] >= arr[i]) {
+      return false;
+    }
+  }
 
+  return true;
+}
+
+console.log(isArrayAscending(sampleArray));
 
 ////////////////// PROBLEM 22 ////////////////////
 
