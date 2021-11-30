@@ -16,6 +16,8 @@ function helloWorld() {
   console.log('Hello, World!');
 }
 
+helloWorld();
+
 ////////////////// PROBLEM 2 ////////////////////
 
 /*
@@ -154,11 +156,9 @@ let declaration;
 const nameCheck = name => {
   if (name === 'Steven') {
     return 'What is up Steven?';
-  }
-  else if (name === 'Bryan') {
+  } else if (name === 'Bryan') {
     return 'Hey Bryan!';
-  }
-  else {
+  } else {
     return `Cool name, ${name}`;
   }
 }
@@ -179,14 +179,11 @@ let nameGreeting = nameCheck('Nydia');
 const faveColorFinder = color => {
   if (color === 'red') {
     return 'Red is a great color';
-  }
-  else if (color === 'green') {
+  } else if (color === 'green') {
     return 'Green is a solid favorite color';
-  }
-  else if (color === 'black') {
+  } else if (color === 'black') {
     return 'So trendy';
-  }
-  else {
+  } else {
     return 'You need to evaluate your favorite color choice';
   }
 }
@@ -281,6 +278,7 @@ const theEliminator = (contestants, loser) => {
       contestants.splice(i, 1);
     }
   }
+  return contestants;
 }
 
 ////////////////// PROBLEM 17 ////////////////////
@@ -357,7 +355,7 @@ const isArrayAscending = arr => {
   return true;
 }
 
-console.log(isArrayAscending(sampleArray));
+isArrayAscending(sampleArray);
 
 ////////////////// PROBLEM 22 ////////////////////
 
