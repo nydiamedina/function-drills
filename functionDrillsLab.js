@@ -275,7 +275,13 @@ let loser = 'Glimmer'
 */
 
 //CODE HERE
-
+const theEliminator = (contestants, loser) => {
+  for (let i = 0; i < contestants.length; i++) {
+    if (contestants[i] === loser) {
+      contestants.splice(i, 1);
+    }
+  }
+}
 
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = "Hi, my name is Kylo."
@@ -285,7 +291,9 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
+const upperCase = string => console.log(string.toUpperCase());
 
+upperCase(sampleString);
 
 ////////////////// PROBLEM 18 ////////////////////
 /*
