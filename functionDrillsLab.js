@@ -322,7 +322,11 @@ const emailCheck = email => {
 */
 
 //CODE HERE
+const buyChocolateFrogs = goldAmount => {
+  return Math.floor(goldAmount/3);
+}
 
+let totalFrogs = buyChocolateFrogs(500);
 
 ////////////////// PROBLEM 20 ////////////////////
 /*
@@ -330,7 +334,11 @@ const emailCheck = email => {
 */
 
 //CODE HERE
+const buyChocolateFrogs2 = goldAmount => {
+  return Math.floor(goldAmount/3);
+}
 
+let totalFrogs2 = buyChocolateFrogs(500);
 
 ////////////////// PROBLEM 21 ////////////////////
 let sampleArray = [0,1,2,3,4,7,5,6,8,9]
