@@ -236,7 +236,7 @@ let oddChecker = thatsOdd(29);
 */
 
 //CODE HERE
-
+const bestMovie = movie => console.log(`${movie} is the best movie ever!`);
 
 ////////////////// PROBLEM 15 ////////////////////
 let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
@@ -250,7 +250,21 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 */
 
 //CODE HERE
+const bigOrSmall = arr => {
+  let answers = [];
 
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 100) {
+      answers.push('big');
+    } else {
+      answers.push('small');
+    }
+  }
+
+  return answers;
+}
+
+let arrayEvaluator = bigOrSmall(bigOrSmallArray);
 
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
