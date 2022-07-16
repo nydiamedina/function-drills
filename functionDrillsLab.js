@@ -35,7 +35,7 @@ const jsNinja = () => console.log('I am a JavaScript ninja!');
 */
 
 //CODE HERE
-const printName = (name) => console.log(name);
+const printName = name => console.log(name);
 
 printName('Nydia');
 
@@ -43,7 +43,6 @@ printName('Nydia');
 /*
   Create a function called greeting that
   accepts name as its only parameter.
-  Convert the name param into a string.
   greeting should log the string 'Hello, '
   plus the value of the name parameter.
   Ex. If Jake were passed in as the argument, the function would log 'Hello, Jake'
@@ -51,7 +50,7 @@ printName('Nydia');
 */
 
 //CODE HERE
-const greeting = (name) => console.log(`Hello, ${String(name)}`);
+const greeting = name => console.log(`Hello, ${name}`);
 
 greeting('Nydia');
 
@@ -100,9 +99,9 @@ const exclaim = function(str) {
   return str.toUpperCase() + '!!!'
 }
 
-// arrow
-// declaration
-let expression;
+// console.log('arrow')
+// console.log('declaration')
+console.log('expression');
 
 ////////////////// PROBLEM 8 ////////////////////
 
@@ -111,13 +110,13 @@ let expression;
   Uncomment the answer underneath.
 */
 
-const exclaimTwo = str => {
+const exclaimTwo = (str) => {
   return str.toUpperCase() + '!!!'
 }
 
-let arrow;
-// declaration
-// expression
+console.log('arrow')
+// console.log('declaration')
+// console.log('expression')
 
 /*
   Rewrite exclaimTwo to be a single line.
@@ -125,8 +124,7 @@ let arrow;
 
   Brownie points if you use a template string
 */
-
-const exclaimTwoV2 = str => `${str.toUpperCase()}!!!`;
+const exclaimTwoV2 = (str) => `${str.toUpperCase()}!!!`;
 
 ////////////////// PROBLEM 9 ////////////////////
 
@@ -139,9 +137,9 @@ function exclaimFour(str) {
   return str.toUpperCase() + '!!!'
 }
 
-// arrow
-let declaration;
-// expression
+// console.log('arrow')
+console.log('declaration');
+// console.log('expression')
 
 ////////////////// PROBLEM 10 ////////////////////
 /*
@@ -153,7 +151,7 @@ let declaration;
 */
 
 //CODE HERE
-const nameCheck = name => {
+const nameCheck = (name) => {
   if (name === 'Steven') {
     return 'What is up Steven?';
   } else if (name === 'Bryan') {
@@ -176,15 +174,15 @@ let nameGreeting = nameCheck('Nydia');
 */
 
 //CODE HERE
-const faveColorFinder = color => {
+const faveColorFinder = (color) => {
   if (color === 'red') {
-    return 'Red is a great color';
+    return 'Red is a great color.';
   } else if (color === 'green') {
-    return 'Green is a solid favorite color';
+    return 'Green is a solid favorite color.';
   } else if (color === 'black') {
-    return 'So trendy';
+    return 'So trendy.';
   } else {
-    return 'You need to evaluate your favorite color choice';
+    return 'You need to evaluate your favorite color choice.';
   }
 }
 
@@ -199,7 +197,7 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
-const printAllNames = arr => {
+const printAllNames = (arr) => {
   for (let i = 0; i < arr.length; i++) {
     console.log(arr[i]);
   }
@@ -216,7 +214,7 @@ printAllNames(namesArr);
 */
 
 //CODE HERE
-const thatsOdd = number => {
+const thatsOdd = (number) => {
   return number % 2 !== 0 ? console.log('That\'s not odd!') : console.log('That is odd indeed!');
 }
 
@@ -247,7 +245,7 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 */
 
 //CODE HERE
-const bigOrSmall = arr => {
+const bigOrSmall = (arr) => {
   let answers = [];
 
   for (let i = 0; i < arr.length; i++) {
@@ -303,7 +301,7 @@ upperCase(sampleString);
   If it does, return 'email verified' and if doesn't, 
   return 'must provide a valid email address'
 */
-const emailCheck = email => {
+const emailCheck = (email) => {
   const stringEmail = String(email).trim();
   
   if (stringEmail.includes('@')) {
@@ -320,7 +318,7 @@ const emailCheck = email => {
 */
 
 //CODE HERE
-const buyChocolateFrogs = goldAmount => {
+const buyChocolateFrogs = (goldAmount) => {
   return Math.floor(goldAmount/3);
 }
 
@@ -332,7 +330,7 @@ let totalFrogs = buyChocolateFrogs(500);
 */
 
 //CODE HERE
-const buyChocolateFrogs2 = goldAmount => {
+const buyChocolateFrogs2 = (goldAmount) => {
   return Math.floor(goldAmount/3);
 }
 
@@ -345,7 +343,7 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 */
 
 //CODE HERE
-const isArrayAscending = arr => {
+const isArrayAscending = (arr) => {
   for (let i = 1; i < arr.length; i++) {
     if (arr[i - 1] >= arr[i]) {
       return false;
